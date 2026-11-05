@@ -1,0 +1,125 @@
+html {
+  background: url("assets/background.jpg");
+  background-size: cover;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid #273E47;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+  backdrop-filter: blur(1px);
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hand {
+  width: 50%;
+  height: 6px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  border-radius: 20%;
+}
+
+.hour-hand {
+  background: #D8973C;
+  height: 8px;
+  width: 35%;
+  left: 15%;
+}
+
+.min-hand {
+  background: #457B9D;
+  height: 6px;
+}
+
+.sec-hand {
+  background: #E63946;
+  height: 3px;
+}
+
+#pin {
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+  background-color: rgb(179, 115, 115);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #1D3557;
+  z-index: 10;
+}
+
+.number {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #273E47;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.n12 {
+  top: 0.5rem;
+}
+
+.n6 {
+  bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.n3 {
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+  left: auto;
+}
+
+.n9 {
+  top: 50%;
+  left: 0.5rem;
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+  right: auto;
+}
+
+#meridiem {
+  position: absolute;
+  top: 25%;
+  left: 73%;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #273E47;
+}
