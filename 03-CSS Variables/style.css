@@ -1,0 +1,55 @@
+:root {
+  --spacing: 10px;
+  --blur: 0px;
+  --base-color: #ffc600;
+  --brightness: 100%;
+  --saturate: 100%;
+  --hue: 0deg;
+}
+
+html {
+  background: url(https://i.ibb.co/7x78sGM7/360-F-509854035-W21r-Tw-Rs-VVAg-Nq9dj-Rvaqi-USci-X1px8-K.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+img {
+  padding: var(--spacing);
+  background-color: var(--base-color);
+  filter: 
+    blur(var(--blur))
+    brightness(var(--brightness)) 
+    saturate(var(--saturate))
+    hue-rotate(var(--hue));
+}
+
+.highlight {
+  color: var(--base-color);
+}
+
+body {
+  text-align: center;
+  color: white;
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+input {
+  width: 100px;
+}
+
+#reset {
+  color: #ffc600;
+  background-color: #1f1f1fa0;
+  padding: 1rem;
+  font-size: 2rem;
+  border: 2px solid #1f1f1fa0;
+}
