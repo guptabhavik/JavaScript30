@@ -5,12 +5,12 @@ const period = document.querySelector("#meridiem")
 
 const setTime = () => {
   const now = new Date();
-  const millisec = now.getMilliseconds();
+  const millisecond = now.getMilliseconds();
   const sec = now.getSeconds();
   const min = now.getMinutes();
   const hour = now.getHours();
 
-  const secDeg = ((sec / 60) * 360) +((millisec / 1000) * 6)+ 90;
+  const secDeg = ((sec / 60) * 360) +((millisecond / 1000) * 6)+ 90;
   const minDeg = ((min / 60) * 360) + ((sec / 60) * 6) + 90;
   const hourDeg = ((hour / 12) * 360) + ((min / 60) * 30) + 90;
 
